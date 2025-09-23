@@ -140,25 +140,25 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 380px;
+        max-width: 350px;
     }
 
     #addTask {
-        max-width: 350px;
+        max-width: 340px;
     }
 
     .taskList {
         
-        max-width: 380px;
+        max-width: 350px;
     }
 
     #taskList li {
-        width: 300px;
+        width: 328px;
 
     }
 
     .taskList {
-        width: 380px;
+        max-width: 350px;
     }
 
     #taskInput {
