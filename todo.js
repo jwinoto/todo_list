@@ -1,27 +1,36 @@
 window.onload = function() {
 
 const voeg_toe_knop = document.getElementById('addTaskButton');
+
+
 voeg_toe_knop.addEventListener('click', taakToevoegen);
 
 const nieuwe_taak = document.getElementById('taskInput');
+
+
+
+
 nieuwe_taak.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
             event.preventDefault();
-
+            nieuwe_taak.focus();
             taakToevoegen();
+
         }
     });
 
 nieuwe_taak.addEventListener('focus', () => {
 divAlert.textContent = '';
 })
+
 function taakToevoegen() {
         
-      
+        document.getElementById('divAlert').textContent='';
         const taak_tekst = nieuwe_taak.value.trim();
 
         if (taak_tekst === '') {
             document.getElementById('divAlert').textContent = 'Voer een taak in' ;
+                    
             return;
         }
         
