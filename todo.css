@@ -32,7 +32,7 @@ body {
     margin : 10px; 
     background : linear-gradient(135deg,#6D6027, #d3cbb8);   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    width: 100%;
+    width: 90%;
     min-height: 100px;
 
 }
@@ -111,7 +111,7 @@ li a{
 
 .taskList {
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 0 10px;
     overflow-y: auto; 
     max-height: 300px;
@@ -130,7 +130,8 @@ h2 {
 
  #divAlert{
     padding: 10px;
-    color: white;
+    color: red;
+    font-weight: bold;
     display: block;
     text-align: center;
  }
@@ -142,7 +143,7 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 95%;
+        width: 90%;
     }
 
     #addTaskButton{
