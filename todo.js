@@ -13,15 +13,11 @@ const nieuwe_taak = document.getElementById('taskInput');
 nieuwe_taak.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
             event.preventDefault();
-            nieuwe_taak.focus();
+         
             taakToevoegen();
 
         }
     });
-
-nieuwe_taak.addEventListener('focus', () => {
-divAlert.textContent = '';
-})
 
 function taakToevoegen() {
         
@@ -30,8 +26,9 @@ function taakToevoegen() {
 
         if (taak_tekst === '') {
             document.getElementById('divAlert').textContent = 'Voer een taak in' ;
-                    
-            return;
+            setTimeout(function() {
+                document.getElementById('divAlert').textContent = '';}, 2000);
+            
         }
         
     
